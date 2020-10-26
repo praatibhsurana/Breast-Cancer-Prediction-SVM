@@ -1,7 +1,7 @@
-##Brief
+## Brief
 The project was carried out on the breast cancer dataset compiled for research. It can be found at: [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29)
 
-###Attribute Information:
+### Attribute Information:
 
 1) ID number
 2) Diagnosis (M = malignant, B = benign)
