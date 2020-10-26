@@ -29,3 +29,15 @@ All feature values are recoded with four significant digits. |
 Missing attribute values: none |
 Class distribution: 357 benign, 212 malignant
 
+### Correlation Heatmap of the various parameters after basic EDA
+![Correlation Heatmap](https://github.com/praatibhsurana/Breast-Cancer-Prediction-SVM/blob/master/corr_heatmap.png?raw=true)
+
+### Model
+A SVM Classifier was used. A little bit of tweaking on the C parameter and use of rbf kernel yielded better results as compared to a linear kernel.
+The scores obtained were as follows:
+1) Accuracy = 0.93
+2) Precision = 0.95
+3) Recall = 0.74
+4) F1-Score = 0.83
+
+The score can be improved on further analysis and experimentation with various kernels and tweaking of 'C' and 'gamma' parameters.
