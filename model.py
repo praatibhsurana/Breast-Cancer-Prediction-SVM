@@ -5,7 +5,7 @@ import seaborn as sns
 from sklearn import svm
 from sklearn import metrics
 import preprocessing as pre
-
+import joblib
 
 # Accessing dataset
 data = pd.read_csv("data.csv")
@@ -42,3 +42,7 @@ rec = metrics.recall_score(test_labels, y_pred)
 print("Recall:", rec)
 
 print("F-1 Score:", (2 * prec * rec) / (prec + rec))
+
+# Saving model
+filename = "pred.sav"
+joblib.dump(clf, filename)
