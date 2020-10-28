@@ -43,6 +43,19 @@ print("Recall:", rec)
 
 print("F-1 Score:", (2 * prec * rec) / (prec + rec))
 
+# print(train[0], train_labels[0])
 # Saving model
 filename = "pred.sav"
 joblib.dump(clf, filename)
+
+
+def prediction(data):  # Takes a 2D array of shape (1,26)
+    data = pre.final_preprocess(data)  # Carry out normalization
+    # Loading model for prediction
+    loaded_model = joblib.load("pred.sav")
+    result = loaded_model.predict(data)
+    if result == 1:
+        result = "Malignant"
+    else:
+        result = "Benign"
+    return result

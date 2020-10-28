@@ -50,3 +50,13 @@ def train_test_split(data, labels):
     )
 
     return train, train_labels, test, test_labels
+
+
+def final_preprocess(arr):
+    arr = np.array(arr)
+
+    arr = sklearn.preprocessing.normalize(
+        arr, axis=1, norm="l2", copy=False, return_norm=False
+    )
+
+    return arr
