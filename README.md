@@ -33,7 +33,7 @@ Class distribution: 357 benign, 212 malignant
 ![Correlation Heatmap](https://github.com/praatibhsurana/Breast-Cancer-Prediction-SVM/blob/master/corr_heatmap.png?raw=true)
 
 ### Model
-A SVM Classifier was used. A little bit of tweaking on the C parameter and use of rbf kernel yielded better results as compared to a linear kernel.
+A SVM Classifier was used. Preprocessing and EDA was carried out and the 26 best parameters that affected the prediction were chosen. A little bit of tweaking on the C parameter and use of rbf kernel yielded better results as compared to a linear kernel.
 The scores obtained were as follows:
 1) Accuracy = 0.93
 2) Precision = 0.95
